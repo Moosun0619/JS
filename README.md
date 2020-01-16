@@ -1,6 +1,6 @@
 # Surge4.0自用JS存档
 
-## 人人视频(可远程使用）
+## rrsp(可远程使用）
 ### 配置 (Surge)
 ```properties
 [Script]
@@ -9,7 +9,7 @@ http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requi
 Surge MITM =*.rr.tv
 ```
 
-## 轻颜相机（仅可本地使用，引用时注意本地路径）
+## qyxj（仅可本地使用，引用时注意本地路径）
 ### 配置 (Surge)
 ```properties
 [Script]
