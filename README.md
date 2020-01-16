@@ -9,7 +9,7 @@ http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requi
 Surge MITM =*.rr.tv
 ```
 
-## qyxj（仅可本地使用，引用时注意本地路径）
+## qyxj（仅可本地使用，使用时注意本地路径）
 ### 配置 (Surge)
 ```properties
 [Script]
