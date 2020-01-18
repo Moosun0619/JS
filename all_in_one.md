@@ -1,6 +1,6 @@
 # 多合一签到脚本（自用Surge配置）--未修改完成勿用
 
-##包含哔哩哔哩签到, 京东签到, 网易云签到, 百度贴吧签到, 人人视频签到, 喜马拉雅签到
+##包含哔哩哔哩直播！！签到, 京东签到, 网易云签到, 百度贴吧签到, 人人视频签到, 喜马拉雅签到
 （没有微博签到，微博签到需自行添加自己的超话id，所以请自己搞定，谢谢！）
 
 > 此脚本仅支持Surge
@@ -56,7 +56,7 @@ const global = {
 hostname = *.bilibili.com, api.m.jd.com，tieba.baidu.com, music.163.com, *.rr.tv,mobwsa.ximalaya.com
 ```
 
-### script
+### 获取cookie的脚本（脚本1）
 
 以下cookie获取之后需注释掉
 
@@ -80,13 +80,44 @@ https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action.*authcookie url script-
 https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header all_in_one.js
 ```
 
-### 定时配置（例：8点签到）
-
+### 签到脚本（脚本2)
 ```
+（例：8点签到）
 cron "0 0 8 * * *" script-path= https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 ```
 
-## 触发Cookie方式
+## 触发Cookie方式详细说明
+
+###哔哩哔哩直播签到
+1. 先在浏览器登录 `(先登录! 先登录! 先登录!)`
+2. 先把`*.bilibili.com`加到`[MITM]`
+3. 将远程脚本1、2放到`[Script]`
+4. 打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
+5. 系统提示: `获取Cookie: 成功`
+6. 最后就可以把脚本1注释掉了
+
+> 脚本1是用来获取 cookie 的, 用浏览器访问一次获取 cookie 成功后就可以删掉或注释掉了, 但请确保在`登录成功`后再获取 cookie.
+
+> 脚本2是签到脚本, 每天`00:00:10`执行一次.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 |                             名称                             |  方式  |                            说明                            |
 | :----------------------------------------------------------: | :----: | :--------------------------------------------------------: |
