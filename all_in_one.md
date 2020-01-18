@@ -54,6 +54,7 @@ const global = {
 ```
 [mitm]
 hostname = *.bilibili.com, api.m.jd.com，tieba.baidu.com, music.163.com, *.rr.tv,mobwsa.ximalaya.com
+```
 
 ### script
 
@@ -77,7 +78,6 @@ https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action.*authcookie url script-
 
 # 此处用于喜马拉雅cookie获取,浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
 https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header all_in_one.js
-
 ```
 
 ### 定时配置（例：8点签到）
