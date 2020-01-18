@@ -4,26 +4,23 @@
 
 > 此脚本仅支持Surge
 >
->此根据 [@sazs34](https://github.com/sazs34)大佬的改编，如需可去大佬的网址查看
+>此根据 [@sazs34](https://github.com/sazs34)大佬的改编，如需qx的, 可去大佬的网址查看
 >
 
 **支持列表**
 
 |    名称    | Cookie |                             签到                             |                       感谢                        |     说明     |
 | :--------: | :----: | :----------------------------------------------------------: | :-----------------------------------------------: | :----------: |
-|  百度贴吧  |   ✅    |                              ✅                               |                      我自己                       |              |
-|  百度贴吧  |   ✅    |                              ✅                               |                      我自己                       |              |
-
-|  百度贴吧  |   ✅    |                              ✅                               |                      我自己                       |              |
-| 网易云音乐 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
+|  哔哩哔哩 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
 |    京东    |   ✅    | [获取](https://github.com/NobyDa/Script/blob/master/JD-DailyBonus/JD_DailyBonus.js) |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
-|  吾爱破解  |   ✅    |                              ✅                               |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
-|  微博超话  |   ✅    |                              ✅                               | [@NavePnow](https://github.com/NavePnow/Profiles) | cookie同原版 |
-| 爱奇艺VIP  |   ✅    |                              ✅                               |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
+| 网易云音乐 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
+| 百度贴吧 |   ✅    |                              ✅                               |     [@chavyleung](https://github.com/chavyleung)  |              |
+|  人人视频 |   ✅    |                              ✅                                            |    [@chavyleung](https://github.com/chavyleung)     | cookie同原版 |
+| 喜马拉雅  |   ✅    |                              ✅                               |     [@chavyleung](https://github.com/chavyleung)       | cookie同原版 |
 
 脚本地址:
 
-**https://github.com/sazs34/TaskConfig/blob/master/all_in_one.js**
+**   **
 
 ## 脚本配置说明
 
