@@ -12,16 +12,17 @@
 
 |    名称    | Cookie |                             签到                             |                       感谢                        |     说明     |
 | :--------: | :----: | :----------------------------------------------------------: | :-----------------------------------------------: | :----------: |
-|  哔哩哔哩 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
+|  哔哩哔哩 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |   cookie同原版    |
 |    京东    |   ✅    | [获取](https://github.com/NobyDa/Script/blob/master/JD-DailyBonus/JD_DailyBonus.js) |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
-| 网易云音乐 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
-| 百度贴吧 |   ✅    |                              ✅                               |     [@chavyleung](https://github.com/chavyleung)  |              |
+| 网易云音乐 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |     cookie同原版    |
+| 百度贴吧 |   ✅    |                              ✅                               |     [@chavyleung](https://github.com/chavyleung)  |    cookie同原版   |
 |  人人视频 |   ✅    |                              ✅                                            |    [@chavyleung](https://github.com/chavyleung)     | cookie同原版 |
 | 喜马拉雅  |   ✅    |                              ✅                               |     [@chavyleung](https://github.com/chavyleung)       | cookie同原版 |
 
 脚本地址:
 
-**  未添加 **
+** https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
+ **
 
 ## 脚本配置说明
 
@@ -59,7 +60,6 @@ hostname = *.bilibili.com, api.m.jd.com，tieba.baidu.com, music.163.com, *.rr.t
 以下cookie获取之后需注释掉
 
 ```
-https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 # 此处用于哔哩哔哩cookie获取，打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com （需先登陆再获取cookie），待弹出获取成功后，即可注释掉
 http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path= https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 
