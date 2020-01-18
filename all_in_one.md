@@ -1,4 +1,4 @@
-# 多合一签到脚本（仅Surge,根据sazs34大佬的修改为自己要用的，去掉自己不用的，自用版）
+# 多合一签到脚本（仅Surge,根据sazs34大佬的修改为自己要用的，去掉自己不用的，自用版）--未修改完成，请勿使用
 
 ##以下为我自用的，如需全部的可去看sazs34大佬的：https://github.com/sazs34/TaskConfig
 
@@ -57,7 +57,7 @@ const global = {
 |  weibo_super  | [微博超话名字及编号](https://nave.work/%E5%BE%AE%E5%8D%9A%E8%B6%85%E8%AF%9D%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC.html) |
 
 
-## Quantumult配置说明
+## Surge配置说明
 
 ### MITM
 
@@ -68,15 +68,15 @@ const global = {
 ```
 [mitm]
 # cookie获取专用,仅获取cookie时使用
-hostname = tieba.baidu.com, c.tieba.baidu.com, music.163.com, passport.iqiyi.com, www.52pojie.cn, *.v2ex.com, weibo.com, wapside.189.cn
+hostname = tieba.baidu.com, c.tieba.baidu.com, music.163.com, api.m.jd.com, weibo.com
 ```
-### REWRITE
+###script
 
 此处直接放着就好,不需要注释掉
 
 ```
 [rewrite_local]
-# 此处用于京东cookie获取，当失效时需要手动登录京东网页版https://bean.m.jd.com/ 签到获取Cookie, 待QX弹出获取成功即可
+# 此处用于京东cookie获取，当失效时需要手动登录京东网页版https://bean.m.jd.com/ 签到获取Cookie, 待surge弹出获取成功即可
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBeanIndex url script-request-header all_in_one.js
 # 此处用于百度贴吧cookie获取，当失效时需手动登录https://tieba.baidu.com/index.html贴吧获取cookie，待弹出获取成功即可
 ^https?:\/\/tieba.baidu\.com url script-request-header all_in_one.js
@@ -112,11 +112,7 @@ https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header all_i
 | :----------------------------------------------------------: | :----: | :--------------------------------------------------------: |
 |                           百度贴吧                           | 浏览器 |             https://tieba.baidu.com/index.html             |
 |                           百度贴吧                           |  APP   |                   进入APP,点击"我的"即可                   |
-|                          电信营业厅                          |  APP   |               进入APP,点击"我",签到即可获取                |
 |                            网易云                            | 浏览器 |               https://music.163.com/m/login                |
-|                            爱奇艺                            |  APP   |                   进入APP,点击"我的"即可                   |
-|                           吾爱破解                           | 浏览器 |         https://www.52pojie.cn/home.php?mod=space          |
-|                             V2EX                             | 浏览器 |             https://www.v2ex.com/mission/daily             |
 | [微博超话](https://nave.work/%E5%BE%AE%E5%8D%9A%E8%B6%85%E8%AF%9D%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC.html) | 浏览器 | https://weibo.com/p/1008080c5fb650788fe5c7577f0b6ec4a34038 |
 
 
