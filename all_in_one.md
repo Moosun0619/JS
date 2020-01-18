@@ -1,5 +1,7 @@
 # 多合一签到脚本（仅Surge,根据sazs34大佬的修改为自己要用的，去掉自己不用的，自用版）
 
+##以下为我只用的，如需全部的可去看sazs34大佬的：https://github.com/sazs34/TaskConfig
+
 **支持列表**
 
 |    名称    | Cookie |                             签到                             |                       感谢                        |     说明     |
