@@ -7,9 +7,7 @@
 |  百度贴吧  |   ✅    |                              ✅                               |                      [@sazs34](https://github.com/sazs34)                     |              |                     |           
 | 网易云音乐 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
 |    京东    |   ✅    | [获取](https://github.com/NobyDa/Script/blob/master/JD-DailyBonus/JD_DailyBonus.js) |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
-|  吾爱破解  |   ✅    |                              ✅                               |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
 |  微博超话  |   ✅    |                              ✅                               | [@NavePnow](https://github.com/NavePnow/Profiles) | cookie同原版 |
-| 爱奇艺VIP  |   ✅    |                              ✅                               |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
 
 脚本地址:
 
