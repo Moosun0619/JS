@@ -6,7 +6,7 @@
 
 |    名称    | Cookie |                             签到                             |                       感谢                        |     说明     |
 | :--------: | :----: | :----------------------------------------------------------: | :-----------------------------------------------: | :----------: |
-|  百度贴吧  |   ✅    |                              ✅                               |                      [@sazs34](https://github.com/sazs34)                     |              |                     |           
+|  百度贴吧  |   ✅    |                              ✅                               |                      [@chavyleung](https://github.com/chavyleung)                  |              |                     |           
 | 网易云音乐 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
 |    京东    |   ✅    | [获取](https://github.com/NobyDa/Script/blob/master/JD-DailyBonus/JD_DailyBonus.js) |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
 |  微博超话  |   ✅    |                              ✅                               | [@NavePnow](https://github.com/NavePnow/Profiles) | cookie同原版 |
@@ -67,31 +67,20 @@ const global = {
 
 ```
 [mitm]
-# cookie获取专用,仅获取cookie时使用
 hostname = tieba.baidu.com, c.tieba.baidu.com, music.163.com, api.m.jd.com, weibo.com
 ```
 ###script
 
-此处直接放着就好,不需要注释掉
-
+以下cookie获取后可注释掉
 ```
-[rewrite_local]
-# 此处用于京东cookie获取，当失效时需要手动登录京东网页版https://bean.m.jd.com/ 签到获取Cookie, 待surge弹出获取成功即可
-https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBeanIndex url script-request-header all_in_one.js
+# 此处用于京东cookie获取，当失效时需要手动登录京东网页版https://bean.m.jd.com/ 签到获取Cookie, 待surge弹出获取成功即可 
+http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) max-size=0,script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 # 此处用于百度贴吧cookie获取，当失效时需手动登录https://tieba.baidu.com/index.html贴吧获取cookie，待弹出获取成功即可
 ^https?:\/\/tieba.baidu\.com url script-request-header all_in_one.js
-# 此处用于电信营业厅APP cookie获取,获取后记得去all_in_one.js中配置手机号码
-https:\/\/wapside\.189\.cn:9001\/api\/home\/sign url script-request-header all_in_one.js
 # APP端直接进去，点击"我的"即可
 https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login url script-request-header all_in_one.js
 # 此处用于网易云音乐cookie获取，当失效时需浏览器访问并登录:https://music.163.com/m/login 获取cookie，待弹出获取成功即可
-^https?:\/\/music\.163\.com url script-request-header all_in_one.js
-# 此处用于爱奇艺cookie获取，加mitm后打开APP，点击“我的”，待弹出获取成功即可
-https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action.*authcookie url script-request-header all_in_one.js
-# 此处用于52破解cookie获取,浏览器访问https://www.52pojie.cn/home.php?mod=space 即可
-https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header all_in_one.js
-# 此处用于V2EX cookie获取，浏览器打开https://www.v2ex.com/mission/daily ，待弹出获取成功即可
-^https:\/\/www\.v2ex\.com\/mission\/daily url script-request-header all_in_one.js
+http-request ^https?:\/\/music\.163\.com\/?.? script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 # 此处用于微博超话 cookie获取,打开超话页,点击'签到'或'已签到',用完后可以注释掉
 ;https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin url script-request-header all_in_one.js
 # 此处用于强制手机浏览器访问电脑端超话页面,用完后可以注释掉
@@ -99,11 +88,10 @@ https:\/\/www\.52pojie\.cn\/home\.php\?mod=space url script-request-header all_i
 
 ```
 
-### task配置
+### 定时配置
 
 ```
-[task]
-0 0 * * * all_in_one.js
+cron "0 30 9 * * *" script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/all_in_one.js
 ```
 
 ## 触发Cookie方式
