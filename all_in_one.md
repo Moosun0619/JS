@@ -1,19 +1,20 @@
-# 多合一签到脚本
+# 多合一签到脚本（自用Surge配置）--未修改完成勿用
 
-> 此脚本支持QuantumultX和Surge,但是给出的示例都是qx的
->
-> 因qx190以后支持区分script-request-header,所以技术上可以将cookie获取和签到放到一个js里面了
->
-> 原有的all_in_cookie和all_in_sign合并了起来,并且删除掉他们,请各位老客重新配置一下
+##包含哔哩哔哩签到, 京东签到, 网易云签到, 百度贴吧签到, 人人视频签到, 喜马拉雅签到
 
-<img src="assets/image-20200116103533642.png" alt="image-20200116103533642" style="zoom:50%;" />
+> 此脚本仅支持Surge
+>
+>此根据 [@sazs34](https://github.com/sazs34)大佬的改编，如需可去大佬的网址查看
+>
 
 **支持列表**
 
 |    名称    | Cookie |                             签到                             |                       感谢                        |     说明     |
 | :--------: | :----: | :----------------------------------------------------------: | :-----------------------------------------------: | :----------: |
 |  百度贴吧  |   ✅    |                              ✅                               |                      我自己                       |              |
-| 电信营业厅 |   ✅    |                              ✅                               |                      我自己                       |              |
+|  百度贴吧  |   ✅    |                              ✅                               |                      我自己                       |              |
+
+|  百度贴吧  |   ✅    |                              ✅                               |                      我自己                       |              |
 | 网易云音乐 |   ✅    |                              ✅                               |   [@chavyleung](https://github.com/chavyleung)    |              |
 |    京东    |   ✅    | [获取](https://github.com/NobyDa/Script/blob/master/JD-DailyBonus/JD_DailyBonus.js) |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
 |  吾爱破解  |   ✅    |                              ✅                               |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
