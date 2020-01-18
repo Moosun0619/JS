@@ -1,6 +1,6 @@
 # 多合一签到脚本（仅Surge,根据sazs34大佬的修改为自己要用的，去掉自己不用的，自用版）
 
-##以下为我只用的，如需全部的可去看sazs34大佬的：https://github.com/sazs34/TaskConfig
+##以下为我自用的，如需全部的可去看sazs34大佬的：https://github.com/sazs34/TaskConfig
 
 **支持列表**
 
@@ -11,9 +11,9 @@
 |    京东    |   ✅    | [获取](https://github.com/NobyDa/Script/blob/master/JD-DailyBonus/JD_DailyBonus.js) |       [@NobyDa](https://github.com/NobyDa)        | cookie同原版 |
 |  微博超话  |   ✅    |                              ✅                               | [@NavePnow](https://github.com/NavePnow/Profiles) | cookie同原版 |
 
-脚本地址:
+自用脚本地址:
 
-**https://github.com/sazs34/TaskConfig/blob/master/all_in_one.js**
+**https://github.com/XYXShawn/JS/blob/master/all_in_one.js**
 
 ## 脚本配置说明
 
@@ -55,8 +55,7 @@ const global = {
 |     节点      |                             说明                             |
 | :-----------: | :----------------------------------------------------------: |
 |  weibo_super  | [微博超话名字及编号](https://nave.work/%E5%BE%AE%E5%8D%9A%E8%B6%85%E8%AF%9D%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC.html) |
-| china_telecom |    如果要签到电信营业厅,需填写获取cookie时对应的手机号码     |
-|               |                                                              |
+
 
 ## Quantumult配置说明
 
