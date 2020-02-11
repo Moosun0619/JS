@@ -21,13 +21,13 @@ Surge MITM = commerce-api.faceu.mobi
 ## 彩云小译（远程）
 ### 配置 
 ```properties
+####MITM = api.interpreter.caiyunai.com 
 ####Surge 
 [Script]
-http-response ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user requires-body=1,max-size=0,script-path=cyxy.js
-Surge MITM = commerce-api.faceu.mobi
+http-response ^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/XYXShawn/JS/master/cyxy.js
 
 ####QX
 [Script]
-^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body cyxy.js
-
+^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/XYXShawn/JS/master/cyxy.js
+```
 
