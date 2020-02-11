@@ -17,3 +17,19 @@ http-response ^https:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/
 
 Surge MITM = commerce-api.faceu.mobi
 ```
+
+## 彩云小译
+### 配置 
+####Surge 
+```properties
+[Script]
+http-response ^https:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/ requires-body=1,max-size=0,script-path=script/qyxj.js
+
+Surge MITM = commerce-api.faceu.mobi
+
+### 配置 (Surge)
+```properties
+[Script]
+^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body cyxy.js
+
+
